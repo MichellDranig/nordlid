@@ -1,0 +1,206 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+/* Image carousel */  
+.mobile-carousel {
+    display:none;
+}
+.overlayimg {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    line-height: 1.5em;
+    font-weight: 300;
+}
+/* arrows (left) */
+.carousel-control-prev-icon {
+    background-image: none;
+}
+/* arrow controls (right) */
+.carousel-control-next-icon {
+    background-image: none;
+}
+.carousel-control-next, .carousel-control-prev {
+    margin: 0 6%;
+}
+
+/* Text */
+.content-head {
+    font-weight: 300;
+    line-height: 1.5em;
+    margin-top: 5%;
+}
+.mobile-text{
+    display: none;
+}
+
+/* Form style */
+.borderstyle {
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+}
+.form-check-label {
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+/* Fjerner blå outline */
+input[type="text"], textarea {
+    outline: none;
+    box-shadow:none !important;
+    border-bottom:1px solid black !important;
+}
+/* Fjerner kryds fra bootstrap */
+.form-control.is-invalid, .was-validated .form-control:invalid {
+    background-image: none;
+}
+/* Fjerner grøn flueben */
+.form-control.is-valid, .was-validated .form-control:valid {
+    padding-right: calc(1.5em + .75rem);
+    background-image: none;
+}
+/* sætter  tekst farve til sort når man har sat kryds */
+.custom-control-input.is-valid~.custom-control-label, .was-validated .custom-control-input:valid~.custom-control-label {
+    color: black;
+}
+/* Sætter tekst farve til sort når man ikke har sat kryds */
+.custom-control-input.is-invalid~.custom-control-label, .was-validated .custom-control-input:invalid~.custom-control-label {
+    color: black;
+}
+.custom-control-label::before {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0;
+    border: 1px solid black;
+}
+.custom-control-label::after {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-image: none;
+    background-color: white;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+    background-image: none;
+    background-color: #e6007e;
+}
+
+.form-tekst-margin {
+    margin-left: 4%;
+}
+.btn-color {
+    background-color: #e6007e;
+    color: white;
+    border-radius: 0rem;
+    font-weight: 800;
+    width: 60%;
+    font-size: 1.2em;
+}
+.btn:hover {
+    color: white;
+}
+
+/* icon-box */
+.icon-box {
+    background-color: #2a697b;
+    color: white;
+    text-align: center;
+}
+.icon-text {
+    margin-top: 4%;
+    font-size: 1.3em;
+    padding: 0 1% 0 1%;
+}
+.boxsize {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.margin-desk {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+
+/*  Footer */
+.background-footer{
+    background-color: #313131;
+}
+.socialimg {
+    text-align: right;
+    margin-top: 12%;
+
+}
+
+/* Media query for mobile layout */
+@media (max-width: 767px) {
+    .logo {
+        width: 60%;
+        height: auto;
+    }
+    /* Image carousel */
+    .desktop-carousel {
+        display: none;
+    }
+    .mobile-carousel {
+        display:block;
+    }
+    .overlayimg {
+        transform: translate(-70%, -50%);
+        font-size: 1.2em;
+    }
+    .carousel-control-next, .carousel-control-prev {
+        margin: 0 3%;
+    }
+    
+    /* text */
+    .text-area {
+        display: none;
+    }
+    .mobile-text {
+        display:inline;
+    }
+
+    /* Form */
+    .form-text {
+        font-size: 0.6em;
+    }
+    .btn-color {
+        width:100%;
+        margin-top: 4%;
+    }
+    .form-tekst-margin {
+        margin: 2% 0 0 7%;
+        
+    }
+    /* Icon box */
+    .icon-img {
+        width: 25%;
+        height: auto;
+    }
+     .margin-mobile {
+         margin-top:  3%;
+         margin-bottom: 3%;
+    } 
+    .top-mobile {
+        margin-top: 12%;
+        margin-bottom: 0;
+    }
+    .bottom-mobile {
+        margin-top: 0;
+    }
+    .icon-text {
+        padding: 0 12.5% 0 12.5%;
+    }
+
+    /* Footer */
+    .socialimg {
+        text-align: center;
+        margin: 1% 0 5% 0;
+    }
+}
