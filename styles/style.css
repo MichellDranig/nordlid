@@ -74,7 +74,6 @@ input[type="text"], textarea {
 .custom-control-label::before {
     width: 2.5rem;
     height: 2.5rem;
-    border-radius: 0;
     border: 1px solid black;
 }
 .custom-control-label::after {
@@ -84,14 +83,23 @@ input[type="text"], textarea {
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     background-image: none;
     background-color: white;
+    border-radius: none;
 }
 .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
     background-image: none;
     background-color: #e6007e;
+    border: 0.5px solid black;
 }
-
+.form-control.is-invalid, .was-validated .form-control:invalid {
+    border-bottom: 1px solid #e6007e !important;
+    background-image: none;
+}
+.invalid-feedback {
+    color: #e6007e
+}
 .form-tekst-margin {
-    margin-left: 4%;
+    margin-left: 5%;
+    margin-top: 5%;
 }
 .btn-color {
     background-color: #e6007e;

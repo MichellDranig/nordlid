@@ -104,19 +104,21 @@
                 exercitationem eveniet vero est corporis repellendus tempora repudiandae illo. Mollitia iusto necessitatibus eaque 
                 a voluptates at.</p>
 
-            <!-- <form action="index.html"></form> -->
-            <form class="needs-validation" novalidate>
+            
+            <form action="https://s2331.t.eloqua.com/e/f2" class="needs-validation" novalidate>
                 <div class="form-row">
                     <div class="col-12">
+                            <input type="hidden" name="elqFormName" value="cph-business">
+                            <input type="hidden" name="elqSiteID" value="2331">
                         <label for="validationCustom01"></label>
-                        <input type="text" class="form-control borderstyle" id="validationCustom01" placeholder="Navn" required>
+                        <input name="fullName" type="text" class="form-control borderstyle" id="validationCustom01" placeholder="Navn" required>
                         <div class="invalid-feedback">
                             UPS! Du mangler at udfylde noget.
                         </div>
                     </div>
                     <div class="col-12">
                         <label for="validationCustom02"></label>
-                        <input type="text" class="form-control borderstyle" id="validationCustom02" placeholder="E-mail" required>
+                        <input name="emailAddress" type="text" class="form-control borderstyle" id="validationCustom02" placeholder="E-mail" required>
                         <div class="invalid-feedback">
                             UPS! Du mangler at udfylde noget.
                         </div>
@@ -124,7 +126,7 @@
                     <div class="col-12">
                         <label for="validationCustomUsername"></label>
                         <div class="input-group">
-                            <input type="text" class="form-control borderstyle" id="validationCustomUsername" placeholder="Tlf" required>
+                            <input name="mobilePhone" type="text" class="form-control borderstyle" id="validationCustomUsername" placeholder="Tlf" required>
                             <div class="invalid-feedback">
                                 UPS! Du mangler at udfylde noget.
                             </div>
@@ -135,7 +137,7 @@
                 
                 <div class="form-group">
                     <div class="custom-control custom-checkbox">
-                        <input class="custom-control-input" type="checkbox" value="" id="customCheck1" required>
+                        <input  name="permission" class="custom-control-input" type="checkbox" value="" id="customCheck1" required>
                         <label class="custom-control-label form-text" for="customCheck1">
                             <p class="form-tekst-margin">Jeg giver hermed tilladelse til, at Nordlid må gemme og bruge data til 
                                 interne projekter. 
